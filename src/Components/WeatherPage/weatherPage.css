@@ -1,0 +1,107 @@
+.weatherpage-container{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 2rem 0;
+    gap: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.weather-app-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-app-heading > img{
+    height: 4rem;
+}
+
+.weather-app-heading h1{
+    color: #0C0C0C;
+}
+
+.search-weather{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.search-weather > input {
+    width: 15rem;
+    height: 2rem;
+    border: 1px solid darkslategrey;
+    border-radius: .2rem;
+    text-indent: 10px;
+}
+
+.search-weather > button{
+    padding: 0 1rem;
+    border: none;
+    background-color: #0C0C0C;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: .2rem;
+}
+
+.search-weather > button:hover{
+    cursor: pointer;
+}
+
+.city-name{
+    margin: 0 auto;
+    color: #E72929;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.weather-information{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: 3rem 10rem 0;
+    height: 10rem;
+    align-items: center;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: transparent;
+}
+
+.city-temperature, .city-humidity, .city-feels-like-temp, .city-wind-speed{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.city-temperature > h1, .city-humidity > h1, .city-feels-like-temp > h1, .city-wind-speed > h1{
+    color: darkslategray;
+}
+
+.city-temperature > h2, .city-humidity > h2, .city-feels-like-temp > h2, .city-wind-speed > h2{
+    color: #E72929;
+}
+
+.city-weather-forecast{
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: #121481;
+}
+
+@media(max-width: 996px) {
+    .weatherpage-container{
+        gap: 3rem;
+    }
+
+    .weather-information{
+        flex-flow: column nowrap;
+        padding: 2rem;
+        margin: 0 2rem;
+        height: auto;
+        gap: 2rem;
+    }
+}
