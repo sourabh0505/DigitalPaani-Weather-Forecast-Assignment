@@ -42,7 +42,7 @@ To get a local copy up and running follow these simple steps.
 
 ### Usage
 
--Enter the name of the location you want to check the weather for in the search bar.
--Press Enter or click on the search button.
--View the current weather conditions displayed on the screen.
+- Enter the name of the location you want to check the weather for in the search bar.
+- Press Enter or click on the search button.
+- View the current weather conditions displayed on the screen.
 
